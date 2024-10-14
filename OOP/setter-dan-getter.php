@@ -124,7 +124,7 @@ $produk2->setDiskon(50);
 echo $produk2->getHarga();
 echo "<hr>";
 
-$produk1->setPenulis("Galuh Wikri");
+$produk1->setPenulis("Galuh Wikri Ramadhan");
 echo $produk1->getPenulis();
 
 ?>
