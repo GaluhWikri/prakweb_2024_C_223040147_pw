@@ -34,7 +34,7 @@ $produk3->harga = 66600 ;
 
 $produk4 = new Produk();
 $produk4->judul = "bolang 2024";
-$produk4->penulis = "trans tv";
+$produk4->penulis = "trans 7";
 $produk4->penerbit = " trans media";
 $produk4->harga = 239000 ;
 
