@@ -19,15 +19,16 @@ class Produk {
 }
 
 
-$produk1 = new Produk("Si Juki Anak Kosan #1", "Faza Meonko", "Falcon Publishing", 66600 );
-$produk2 = new Produk("FC24", "Electronic Arts", "EA Sports", 239000 );
-$produk3 = new Produk("Naruto");
+$produk1 = new Produk("Si Juki Anak Kosan #1", "Faza Meonko", "Falcon Publishing", 99000 );
+$produk2 = new Produk("si bolang", "Trans tv", "Trans Media", 99000 );
+$produk3 = new Produk("Naruto", "Masasi kisimoto", "Global TV", 99000);
 
 echo "Komik : " . $produk1->getLabel();
 echo "<br>";
-echo "Game : " . $produk2->getLabel();
+echo "Novel : " . $produk2->getLabel();
 echo "<br>";
+echo "Novel : " . $produk3->getLabel();
 
-var_dump($produk3);
+//var_dump($produk3);
 
 ?>
