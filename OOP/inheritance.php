@@ -58,6 +58,7 @@ $produk2 = new Game("Valorant", "Anna Donlon John Goscicki", "Riot", 99000, 5, 5
 echo $produk1->getInfoProduk();
 echo "<br>";
 echo $produk2->getInfoProduk();
+echo "<br>";
 
 
 ?>
