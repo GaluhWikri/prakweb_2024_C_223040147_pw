@@ -93,10 +93,10 @@ echo $produk2->getInfoProduk();
 echo "<hr>";
 
 $produk1->setDiskon(50);
-echo $produk1->getHarga();
+echo "Total Harga Game : " . $produk1->getHarga();
 echo "<br>";
 $produk1->setDiskon(40);
-echo $produk1->getHarga();
+echo "Total Harga komik : " . $produk1->getHarga();
 
 
 ?>
