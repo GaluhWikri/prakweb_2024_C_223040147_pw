@@ -53,7 +53,7 @@ class cetakInfoProduk {
 
 
 $produk1 = new Komik("The finals", "Jeffrey Reddick", "Nexon", 99000, 0, 100);
-$produk2 = new Game("Valorant", "Anna Donlon John Goscicki", "Riot", 99000, 2, 50 );
+$produk2 = new Game("Valorant", "Anna Donlon John Goscicki", "Riot", 99000, 5, 50 );
 
 echo $produk1->getInfoProduk();
 echo "<br>";
