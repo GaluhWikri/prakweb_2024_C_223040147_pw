@@ -38,15 +38,15 @@ class Produk {
 
 
 class cetakInfoProduk {
-    public function cetak( Produk $produk) {
-        $str = "{$produk->judul} | {$produk->getLabel()} (Rp. {$produk->harga})";
+        public function cetak( Produk $produk) {
+            $str = "{$produk->judul} | {$produk->getLabel()} (Rp. {$produk->harga})";
         return $str;
     }
 }
 
 
 $produk1 = new Produk("Si Juki Anak Kosan #1", "Faza Meonko", "Falcon Publishing", 66600, 100, 0, "Komik" );
-$produk2 = new Produk("Valorantt", "Anna Donlon John Goscicki", "Riot", 239000, 0, 50, "Game" );
+$produk2 = new Produk("Valorant", "Anna Donlon John Goscicki", "Riot", 239000, 0, 50, "Game" );
 
 echo $produk1->getInfoLengkap();
 echo "<br>";
