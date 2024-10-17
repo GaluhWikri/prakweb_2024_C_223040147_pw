@@ -1,6 +1,6 @@
 <?php 
 
-// Jualan Produk
+// Jualan Produk.php
 // Konflik
 // Game
 
@@ -16,12 +16,12 @@ class Produk {
 }
 
 
-// $produk1 = new Produk();
+// $produk1 = new Produk.php();
 // $produk1->judul = ""
 // var_dump($produk1);
 
 
-// $produk2 = new Produk();
+// $produk2 = new Produk.php();
 // $produk2->judul = "";
 // $produk2->tambahproperty = ""
 // var_dump($produk2);
