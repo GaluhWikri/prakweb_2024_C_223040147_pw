@@ -11,7 +11,7 @@
 
 
 spl_autoload_register(function( $class){
-    // App\Produk\User = ["App", "Produk", "User"]
+    // app\Produk\User = ["app", "Produk", "User"]
     $class = explode('\\', $class);
     $class = end($class);
     require_once __DIR__ . '/Produk/' . $class . '.php';

@@ -21,8 +21,8 @@ require_once 'App/init.php';
 use App\Service\User as ServiceUser;
 use App\Produk\User as ProdukUser;
 
-//new App\Produk\User();
-//new App\Service\User();
+//new app\Produk\User();
+//new app\Service\User();
 
 new ServiceUser();
 echo "<br>";
