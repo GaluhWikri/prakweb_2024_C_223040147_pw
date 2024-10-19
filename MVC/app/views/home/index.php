@@ -1,12 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Halaman Home</title>
-</head>
-<body>
-    <h1>Selamat datang di website saya</h1>
-</body>
-</html>
+<div class="container">
+    <div class="jumbotron mt-5 bg-secondary bg-opacity-25 p-3 rounded-5">
+        <h1 class="display-4"> Selamat Datang di Website Saya!</h1>
+        <p class="lead"> halo nama saya <?=$data['nama'];?> </p>
+        <hr class="my-4">
+        <p>Adde parvum parvo, manus acervus erit.</p>
+        <a class="btn btn-primary btn-lg rounded-5" href="#" role="button">
+            Learn more</a>
+    </div>
+</div>
