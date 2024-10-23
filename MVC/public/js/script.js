@@ -8,12 +8,12 @@ $(function () {
     $('.tampilModalUbah').on('click', function () {
          $('#formModalLabel').html('Ubah Data Mahasiswa');
          $('.modal-footer button[type=submit]').html('Ubah Data');
-         $('.modal-body form').attr('action', 'http://localhost:85/prakweb_2024_C_223040147/MVC/public/mahasiswa/ubah');
+         $('.modal-body form').attr('action', 'http://localhost/prakweb_2024_C_223040147/MVC/public/mahasiswa/ubah');
 
          const id = $(this).data('id');
 
         $.ajax({
-            url: 'http://localhost:85/prakweb_2024_C_223040147/MVC/public/mahasiswa/getubah',
+            url: 'http://localhost/prakweb_2024_C_223040147/MVC/public/mahasiswa/getubah',
             data: {id : id},
             method: 'post',
             dataType: 'json',
@@ -24,6 +24,8 @@ $(function () {
                 $('#email').val(data.email);
                 $('#jurusan').val(data.jurusan);
                 $('#id').val(data.id);
+                $('#formModalLabel').html('Ubah Data Mahasiswa');
+                $('.modal-footer button[type=submit]').html('Ubah Data');
             }
         });
     });
