@@ -6,7 +6,7 @@
     </div>
         <div class="row">
             <div class="col-lg-6">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">
+                <button type="button" class="btn btn-primary tombolTambahData" data-bs-toggle="modal" data-bs-target="#formModal">
                     Tambah Data Mahasiswa
                 </button>
                 <br><br>
@@ -15,8 +15,12 @@
                         <?php foreach ( $data['mhs'] as $mhs) : ?>
                             <li class="list-group-item">
                                 <?= $mhs['nama'];?>
-                                <a href="<?= BASEURL; ?>/mahasiswa/hapus/ <?=$mhs['id']; ?>"  class="badge badge text-bg-danger float-end ms-2" onclick="return confirm('yakin?');"> Hapus</a>
-                                <a href="<?= BASEURL; ?>/mahasiswa/detail/ <?=$mhs['id']; ?>"  class="badge badge text-bg-secondary float-end ms-2"> Detail</a>
+                                <a href="<?= BASEURL; ?>/mahasiswa/hapus/ <?=$mhs['id']; ?>"
+                                   class="badge badge text-bg-danger float-end ms-2" onclick="return confirm('yakin?');"> Hapus</a>
+                                <a href="<?= BASEURL; ?>/mahasiswa/ubah/ <?=$mhs['id']; ?>"
+                                   class="badge badge text-bg-success float-end ms-2 tampilModalUbah" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $mhs['id']; ?>"> Ubah</a>
+                                <a href="<?= BASEURL; ?>/mahasiswa/detail/ <?=$mhs['id']; ?>"
+                                   class="badge badge text-bg-secondary float-end ms-2"> Detail</a>
                             </li>
                         <?php endforeach; ?>
                     </ul>
@@ -29,7 +33,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="judulModal">Tambah Data Mahasiswa</h1>
+                <h1 class="modal-title fs-5 " id="formModalLabel">Tambah Data Mahasiswa</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
